@@ -4,65 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up Form</title>
+    <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
 </head>
 
 <body>
-    <div>
-        <h4>Omg we are back again. Brother sisters Everybody here.</h4>
-        <h4>Gonna bring the flavor, show you how?</h4>
-        <h4>Got a question for you, better answer now, yeah</h4>
+    <div class="background-image-div">
+        <div class="odin-logo-div">
+            <img id="odin-logo"
+                src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+                alt="">
+            <p id="Odin-p">Odin</p>
+        </div>
+
+        <div class="credit">
+            <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a
+                    href="https://unsplash.com/">Unsplash</a></p>
+        </div>
+
     </div>
 
-    <form action="" method="post">
-<fieldset>
-        <div>
-            <label for="first-name">
-                <span id="firstName">FIRST NAME</span></label>
-            <input type="text" name="first-name" id="first-name">
+    <div class="right-side">
+
+        <h1>Sign-up Form</h1>
+
+        <form action="" method="post">
+            <div id="form-section">
+                <div class="first-name">
+                    <label for="first-name">
+                        <span id="firstName">FIRST NAME</span></label>
+                    <input type="text" name="first-name" id="first-name" required>
+                </div>
+
+                <div>
+                    <label for="last-name">
+                        <span id="lastName">LAST NAME (OPTIONAL)</span></label>
+                    <input type="text" name="last-name" id="last-name">
+                </div>
+
+                <div>
+                    <label for="email">
+                        <span id="Email">EMAIL</span>
+                    </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div>
+                    <label for="number">
+                        <span id="phoneNumber">PHONE NO. (OPTIONAL)</span>
+                    </label>
+                    <input type="number" name="number" id="number">
+                </div>
+
+                <div>
+                    <label for="password">
+                        <span id="Password">PASSWORD</span>
+                    </label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+
+                <div>
+                    <label for="confirmPassword">
+                        <span id="ConfirmPassword">CONFIRM PASSWORD</span>
+                    </label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" required>
+                </div>
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+
+        <div id="last-line">
+            <p>Already have an account? <a href="Log in">Log in</a></p>
         </div>
 
-        <div>
-            <label for="last-name">
-                <span id="lastName">LAST NAME</span></label>
-            <input type="text" name="last-name" id="last-name">
-        </div>
+    </div>
 
-        <div>
-            <label for="email">
-                <span id="Email">EMAIL</span>
-            </label>
-            <input type="email" name="email" id="email">
-        </div>
 
-        <div>
-            <label for="number">
-                <span id="phoneNumber">PHONE NUMBER</span>
-            </label>
-            <input type="number" name="number" id="number">
-        </div>
-
-        <div>
-            <label for="password">
-                <span id="Password">PASSWORD</span>
-            </label>
-            <input type="password" name="password" id="password">
-        </div>
-
-        <div>
-            <label for="confirmPassword">
-                <span id="ConfirmPassword">CONFIRM PASSWORD</span>
-            </label>
-            <input type="password" name="confirmPassword" id="confirmPassword">
-        </div>
-    </fieldset>
-        <button type="submit">Create Account</button>
-    </form>
-
-<p>Already have an account? <a href="Log in">Log in</a></p>
-    
 </body>
 
 </html>

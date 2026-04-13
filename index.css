@@ -1,4 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+@font-face {
+  font-family: "Norse Bold";
+  src: url("https://db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.eot");
+  src: url("https://db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.svg#Norse Bold")format("svg");
+}
+
+.background-image-div {
+  background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  height: 1080px;
+  width: 720px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+#odin-logo {
+  height: 100px;
+  /* opacity: 1; */
+}
+
+#Odin-p {
+  font-size: 75px;
+  color: white;
+}
+
+.odin-logo-div {
+  font-family: "Norse Bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 720px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 300px;
+}
+
+.credit {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 720px;
+}
+
+.credit p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.credit p a:link {
+  color: white
+}
+
+.credit p a:hover {
+  text-decoration: none;
+}
+
 body {
-    font-family:  Arial, Helvetica, sans-serif,system-ui;
+  display: flex;
+  background-color: #E5E7EB;
+}
+
+
+h1 {
+  width: 1181px;
+  margin: 100px 0;
+  text-align: center;
+  border: 2px solid red;
+  font-size: 5rem;
+}
+
+button {
+  padding: 13px 40px;
+  background-color: #596D48;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0px 5px 12px 0px #000000;
+}
+
+button:hover {
+  background-color: #4e5f3f;
+}
+
+#last-line a:link {
+  color: #4e5f3f;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#last-line p a:hover {
+  text-decoration: underline;
+}
+
+#last-line p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  padding: 10px 50px;
+}
+
+form {
+  margin-bottom: 10px;
+  padding: 10px 50px;
+  /* border: 2px solid red; */
+}
+
+#form-section {
+  border: 2px solid red;
+  margin-bottom: 40px;
+  background-color: white;
+}
+
+label {
+  font-size: .7rem;
+  letter-spacing: 2px;
+}
+
+input {
+  outline: none;
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+  /* border-radius: 5px; */
+}
+
+  
+  input:focus {
+    border: 1px solid #3b6fff;
+    box-shadow: 1px 2px 5px 0px #C9C9C9;
+    ;
   }
   
+  input:focus:required:invalid {
+  border: 1px solid red;
+  box-shadow: none;
+}
+
+
+
+
+
+/* */
+
+
+
+/* It should be shown normal
+  when click it should turn blue
+  when I click to required and it not filled yet so the color should be red.
+  focus required invalid */
+
